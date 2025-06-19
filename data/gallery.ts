@@ -11,98 +11,107 @@ export interface GalleryImage {
 
 export const galleryImages: GalleryImage[] = [
   {
-    id: "ravenshollow-mansion",
-    title: "Mansión Ravenshollow",
+    id: "arrival-quito-night",
+    title: "Llegada a Quito de Noche",
     thumbnail: "/placeholder.svg?height=300&width=400",
     fullImage: "/placeholder.svg?height=800&width=1200",
     unlocked: true,
-    description: "La imponente mansión donde todo comenzó. Sus ventanas parecen observarte incluso en la oscuridad.",
+    description: "La capital ecuatoriana iluminada por neones mientras Lilith llega con su misión en mente.",
     category: "Escenarios",
-    unlockCondition: "Completar prólogo",
+    unlockCondition: "Iniciar capítulo 1",
   },
   {
-    id: "eleanor-portrait",
-    title: "Retrato de Eleanor",
+    id: "casa-sagrado-corazon",
+    title: "Casa del Sagrado Corazón",
     thumbnail: "/placeholder.svg?height=300&width=400",
     fullImage: "/placeholder.svg?height=800&width=1200",
     unlocked: true,
-    description:
-      "Un retrato que captura la esencia melancólica de Eleanor. Sus ojos parecen seguirte por la habitación.",
+    description: "El convento donde Lilith creció y comenzó su entrenamiento como exorcista.",
+    category: "Escenarios",
+    unlockCondition: "Completar capítulo 1",
+  },
+  {
+    id: "balberith-revelado",
+    title: "Balberith Revelado",
+    thumbnail: "/placeholder.svg?height=300&width=400",
+    fullImage: "/placeholder.svg?height=800&width=1200",
+    unlocked: false,
+    description: "La verdadera forma del Toro, protector de Lilith y antiguo siervo rebelde.",
     category: "Personajes",
-    unlockCondition: "Conocer a Eleanor",
+    unlockCondition: "Completar capítulo 3",
   },
   {
-    id: "marcus-study",
-    title: "Estudio de Marcus",
-    thumbnail: "/placeholder.svg?height=300&width=400",
-    fullImage: "/placeholder.svg?height=800&width=1200",
-    unlocked: true,
-    description: "El santuario personal de Marcus, lleno de libros antiguos y secretos por descubrir.",
-    category: "Escenarios",
-    unlockCondition: "Visitar el estudio",
-  },
-  {
-    id: "victoria-garden",
-    title: "Victoria en el Jardín",
+    id: "kruster-desquiciado",
+    title: "Kruster Desquiciado",
     thumbnail: "/placeholder.svg?height=300&width=400",
     fullImage: "/placeholder.svg?height=800&width=1200",
     unlocked: false,
-    description: "Victoria entre las rosas marchitas del jardín. La belleza y la decadencia en perfecta armonía.",
+    description: "Kruster en su obsesión por la tradición del pan eterno y su conexión con el Horno.",
     category: "Personajes",
-    unlockCondition: "Ruta de Victoria - Capítulo 3",
+    unlockCondition: "Completar capítulo 5",
   },
   {
-    id: "library-secret",
-    title: "Biblioteca Secreta",
+    id: "el-horno-rojo",
+    title: "El Horno Rojo",
     thumbnail: "/placeholder.svg?height=300&width=400",
     fullImage: "/placeholder.svg?height=800&width=1200",
     unlocked: false,
-    description: "Los pasillos ocultos de la biblioteca guardan los secretos más oscuros de la familia.",
+    description: "El horno ceremonial debajo de El Panecillo, centro de la energía maldita.",
     category: "Escenarios",
-    unlockCondition: "Descubrir el pasaje secreto",
+    unlockCondition: "Entrar a la escena final",
   },
   {
-    id: "final-revelation",
-    title: "La Revelación Final",
+    id: "lilith-sacrificio",
+    title: "El Sacrificio de Lilith",
     thumbnail: "/placeholder.svg?height=300&width=400",
     fullImage: "/placeholder.svg?height=800&width=1200",
     unlocked: false,
-    description: "El momento de la verdad. Cuando todas las piezas del rompecabezas finalmente encajan.",
-    category: "Momentos Clave",
-    unlockCondition: "Completar cualquier final",
+    description: "Lilith entrega su vida para sellar el mal y proteger Quito para siempre.",
+    category: "Finales",
+    unlockCondition: "Final 1 alcanzado",
   },
   {
-    id: "moonlight-scene",
-    title: "Encuentro a la Luz de la Luna",
+    id: "balberith-redencion",
+    title: "Redención de Balberith",
     thumbnail: "/placeholder.svg?height=300&width=400",
     fullImage: "/placeholder.svg?height=800&width=1200",
     unlocked: false,
-    description: "Un momento íntimo bajo la luz plateada de la luna. Algunos secretos solo se revelan en la oscuridad.",
-    category: "Momentos Clave",
-    unlockCondition: "Ruta romántica - Capítulo 5",
+    description: "El Toro canaliza el poder oscuro en sí mismo para contenerlo eternamente.",
+    category: "Finales",
+    unlockCondition: "Final 2 alcanzado",
   },
   {
-    id: "family-portrait",
-    title: "Retrato Familiar",
+    id: "nick-destierro",
+    title: "El Destierro de Nick",
     thumbnail: "/placeholder.svg?height=300&width=400",
     fullImage: "/placeholder.svg?height=800&width=1200",
     unlocked: false,
-    description: "El último retrato de la familia Ravenshollow antes de que todo cambiara para siempre.",
-    category: "Historia",
-    unlockCondition: "Descubrir la historia familiar",
+    description: "Nick canaliza la energía hacia un desierto andino, aislándola del mundo humano.",
+    category: "Finales",
+    unlockCondition: "Final 3 alcanzado",
   },
+  {
+    id: "despertar-granjero",
+    title: "El Despertar del Granjero",
+    thumbnail: "/placeholder.svg?height=300&width=400",
+    fullImage: "/placeholder.svg?height=800&width=1200",
+    unlocked: false,
+    description: "El mal ancestral despierta y Quito cae bajo un velo de sangre y desesperanza.",
+    category: "Finales",
+    unlockCondition: "Final 4 alcanzado",
+  }
 ]
 
 export const getUnlockedCount = (): number => {
-  return galleryImages.filter((image) => image.unlocked).length
+  return galleryImages.filter((image) => image.unlocked).length;
 }
 
 export const getTotalCount = (): number => {
-  return galleryImages.length
+  return galleryImages.length;
 }
 
 export const getImagesByCategory = (category: string): GalleryImage[] => {
-  return galleryImages.filter((image) => image.category === category)
+  return galleryImages.filter((image) => image.category === category);
 }
 
 export const getCategories = (): string[] => {
