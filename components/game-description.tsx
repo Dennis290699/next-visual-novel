@@ -107,7 +107,7 @@ export function GameDescription() {
           >
             <div className="relative overflow-hidden rounded-2xl">
               <img
-                src="/placeholder.svg?height=500&width=700"
+                src="https://res.cloudinary.com/dismyuce7/image/upload/f_auto,q_auto/v1750298118/assets-MortiSabbat/wallpaper/assets-MortiSabbat/wallpaper/banner.png"
                 alt="Gameplay Screenshot"
                 className="w-full h-96 object-cover"
               />

@@ -5,6 +5,7 @@ export interface Character {
   description: string
   imageUrl: string
   imageAvatar: string
+  imageCover: string
   personality: string[]
   backstory: string
   // Información detallada para las secciones
@@ -45,6 +46,7 @@ export const characters: Character[] = [
       "Una joven monja novicia con un oscuro pasado y habilidades espirituales heredadas, que se ve envuelta en una serie de eventos sobrenaturales en los Andes ecuatorianos.",
     imageUrl: "/placeholder.svg?height=400&width=300",
     imageAvatar: "/placeholder.svg?height=200&width=200",
+    imageCover: "/placeholder.svg?height=800&width=1200",
     personality: ["Empática", "Resiliente", "Espiritualmente Sensible", "Curiosa"],
     backstory:
       "Lilith Montesdelvalle es una novicia con sangre indígena que ha sentido presencias desde niña. Tras un evento trágico en su adolescencia, fue llevada por la Iglesia al convento de Quito, donde se entrena como exorcista. Su conexión con lo oculto y su linaje espiritual andino la hacen única, pero también un blanco de fuerzas oscuras que habitan en los rincones olvidados del país.",
@@ -112,8 +114,9 @@ export const characters: Character[] = [
     name: "Balberith",
     role: "Guía espiritual / Entidad ambigua",
     description: "Una antigua entidad espiritual que guía a Lilith en su camino, oscilando entre protector enigmático y posible tentador.",
-    imageUrl:     "https://res.cloudinary.com/dismyuce7/image/upload/f_auto,q_auto/v1750224097/assets-MortiSabbat/avatars/assets-MortiSabbat/avatars/balberith-castellano.jpg",
-    imageAvatar: "/placeholder.svg?height=200&width=200",
+    imageUrl: "https://res.cloudinary.com/dismyuce7/image/upload/f_auto,q_auto/v1750298375/assets-MortiSabbat/characters/assets-MortiSabbat/characters/balberith.jpg",
+    imageAvatar: "https://res.cloudinary.com/dismyuce7/image/upload/f_auto,q_auto/v1750298373/assets-MortiSabbat/characters/assets-MortiSabbat/characters/balberith-castellano.jpg",
+    imageCover: "https://res.cloudinary.com/dismyuce7/image/upload/f_auto,q_auto/v1750298872/assets-MortiSabbat/characters/assets-MortiSabbat/characters/balberithCover.jpg",
     personality: ["Críptico", "Antiguo", "Seductor", "Ambivalente"],
     backstory: "Balberith es una entidad de origen precolombino cuyo nombre ha sido demonizado por interpretaciones cristianas. Se manifiesta en sueños, visiones o rituales, hablando en parábolas y fragmentos de lenguas antiguas. Aunque afirma guiar a Lilith hacia la verdad, sus métodos y motivaciones generan desconfianza.",
     detailedInfo: {
@@ -164,8 +167,9 @@ export const characters: Character[] = [
     name: "Nick Cazas",
     role: "Aliado Dudoso",
     description: "Un joven con un pasado turbio y una conexión emocional intensa con Lilith. Su lealtad está constantemente en duda.",
-    imageUrl:     "https://res.cloudinary.com/dismyuce7/image/upload/f_auto,q_auto/v1750224098/assets-MortiSabbat/avatars/assets-MortiSabbat/avatars/nick-cazas.jpg",
-    imageAvatar: "/placeholder.svg?height=200&width=200",
+    imageUrl: "/placeholder.svg?height=800&width=1200",
+    imageAvatar: "https://res.cloudinary.com/dismyuce7/image/upload/f_auto,q_auto/v1750224098/assets-MortiSabbat/avatars/assets-MortiSabbat/avatars/nick-cazas.jpg",
+    imageCover: "/placeholder.svg?height=800&width=1200",
     personality: ["Leal", "Impulsivo", "Inestable", "Apasionado"],
     backstory: "Nick es un exconvicto que regresó a Quito tras la muerte de su madre en circunstancias misteriosas. Conoció a Lilith en una misión pastoral donde buscaba redención, pero pronto se vio arrastrado a los fenómenos paranormales que rodean al convento y a su pasado familiar.",
     detailedInfo: {
@@ -222,6 +226,7 @@ export const characters: Character[] = [
     description: "Un ermitaño que vive entre los páramos de Quito. Guarda secretos que protegen —o amenazan— la realidad.",
     imageUrl: "/placeholder.svg?height=400&width=300",
     imageAvatar: "/placeholder.svg?height=200&width=200",
+    imageCover: "/placeholder.svg?height=800&width=1200",
     personality: ["Críptico", "Espiritual", "Frío", "Ambiguo"],
     backstory: "Kruster apareció en los registros de la región hace más de dos décadas, sin identificación ni pasado conocido. Vive en los páramos al este de Quito, cerca de un sitio ceremonial indígena donde ocurren fenómenos extraños. Algunos lo llaman chamán, otros loco. La verdad es mucho más compleja.",
     detailedInfo: {
@@ -278,6 +283,7 @@ export const characters: Character[] = [
     description: "Un joven perturbado que habla en acertijos y dibujos. Su mente rota esconde claves para descifrar el horror.",
     imageUrl: "/placeholder.svg?height=400&width=300",
     imageAvatar: "/placeholder.svg?height=200&width=200",
+    imageCover: "/placeholder.svg?height=800&width=1200",
     personality: ["Inestable", "Visionario", "Sensitivo", "Infantil"],
     backstory: "Sheldon creció en la periferia de Quito, en una comunidad marginada donde las creencias ancestrales aún persistían. De niño fue encontrado hablando con piedras y árboles. Internado varias veces, nadie logró 'curarlo'. Fue discípulo de Kruster brevemente, hasta que un evento rompió su mente en fragmentos. Desde entonces, dibuja compulsivamente símbolos, figuras y rostros que coinciden con entidades que nadie más ha visto.",
     detailedInfo: {
@@ -334,6 +340,7 @@ export const characters: Character[] = [
     description: "Un granjero de aspecto imponente que esconde una mente maquiavélica detrás de su fachada rústica.",
     imageUrl: "/placeholder.svg?height=400&width=300",
     imageAvatar: "/placeholder.svg?height=200&width=200",
+    imageCover: "/placeholder.svg?height=800&width=1200",
     personality: ["Manipulador", "Carismático", "Rencoroso", "Visionario"],
     backstory:
       "Agnus Segoya ha vivido toda su vida en las tierras áridas al borde de Quito rural. Conocido como un granjero dedicado, su pasado está marcado por tragedias familiares y un misterioso legado oculto. Con el tiempo, desarrolló un profundo resentimiento hacia la comunidad por lo que considera una traición ancestral, y desde entonces ha planeado meticulosamente su venganza espiritual y simbólica.",

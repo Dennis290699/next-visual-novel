@@ -7,7 +7,7 @@ export interface Character {
   description?: string
 }
 
-export type Emotion = 
+export type Emotion =
   | "normal" | "happy" | "sad" | "angry" | "fear" | "surprise"
   | "confused" | "praying" | "possessed" | "firm" | "nervous"
   | "curious" | "serious" | "disgusted" | "defiant" | "determined"
@@ -54,60 +54,60 @@ export interface Chapter {
 }
 
 export const emotionIcons: Record<Emotion, { icon: string; label: string; color: string }> = {
-  normal:      { icon: "💭", label: "Pensativo", color: "text-gray-400" },
-  happy:       { icon: "✨", label: "Feliz", color: "text-yellow-400" },
-  sad:         { icon: "💧", label: "Triste", color: "text-blue-400" },
-  angry:       { icon: "💢", label: "Enojado", color: "text-red-500" },
-  fear:        { icon: "😰", label: "Temeroso", color: "text-purple-400" },
-  surprise:    { icon: "❗", label: "Sorprendido", color: "text-orange-400" },
-  confused:    { icon: "😕", label: "Confundido", color: "text-indigo-400" },
-  praying:     { icon: "🙏", label: "Rezando", color: "text-amber-500" },
-  possessed:   { icon: "👿", label: "Poseído", color: "text-rose-600" },
-  firm:        { icon: "🪨", label: "Firme", color: "text-stone-600" },
-  nervous:     { icon: "😬", label: "Nervioso", color: "text-yellow-500" },
-  curious:     { icon: "🤔", label: "Curioso", color: "text-cyan-500" },
-  serious:     { icon: "😐", label: "Serio", color: "text-neutral-500" },
-  disgusted:   { icon: "🤢", label: "Asqueado", color: "text-lime-600" },
-  defiant:     { icon: "😤", label: "Desafiante", color: "text-red-400" },
-  determined:  { icon: "🔥", label: "Decidido", color: "text-orange-600" },
-  focused:     { icon: "🎯", label: "Concentrado", color: "text-blue-600" },
-  disturbed:   { icon: "🌀", label: "Perturbado", color: "text-purple-600" },
-  haunted:     { icon: "👁️", label: "Acosado", color: "text-violet-700" },
-  terrified:   { icon: "😱", label: "Aterrorizado", color: "text-rose-500" },
-  terrorized:  { icon: "👻", label: "Aterrorizado", color: "text-indigo-700" },
-  intense:     { icon: "⚡", label: "Intenso", color: "text-yellow-600" },
-  shocked:     { icon: "😲", label: "Impactado", color: "text-orange-300" },
-  dark:        { icon: "🌑", label: "Oscuro", color: "text-gray-700" },
-  grim:        { icon: "☠️", label: "Sombrío", color: "text-slate-700" },
-  urgent:      { icon: "🚨", label: "Urgente", color: "text-red-600" },
-  ominous:     { icon: "🌩️", label: "Amenazante", color: "text-purple-800" },
-  tense:       { icon: "🤐", label: "Tenso", color: "text-gray-600" },
-  anxious:     { icon: "😟", label: "Ansioso", color: "text-yellow-600" },
-  uneasy:      { icon: "😓", label: "Inquieto", color: "text-amber-600" },
-  suspicious:  { icon: "🕵️", label: "Suspicaz", color: "text-zinc-600" },
-  proud:       { icon: "😎", label: "Orgulloso", color: "text-emerald-500" },
-  worried:     { icon: "😟", label: "Preocupado", color: "text-orange-500" },
-  disgust:     { icon: "🤮", label: "Repugnancia", color: "text-lime-500" },
-  frustrated:  { icon: "😤", label: "Frustrado", color: "text-rose-700" },
-  surprised:   { icon: "😮", label: "Sorprendido", color: "text-yellow-400" },
-  desperate:   { icon: "😩", label: "Desesperado", color: "text-rose-600" },
-  thoughtful:  { icon: "🧠", label: "Reflexivo", color: "text-sky-600" },
-  resolute:    { icon: "🛡️", label: "Resuelto", color: "text-teal-600" },
-  creepy:      { icon: "🕷️", label: "Escalofriante", color: "text-gray-800" },
-  panic:       { icon: "😵", label: "Pánico", color: "text-pink-600" },
-  mad:         { icon: "😡", label: "Furioso", color: "text-red-700" },
-  taunt:       { icon: "😈", label: "Provocador", color: "text-rose-700" },
-  excited:     { icon: "😄", label: "Emocionado", color: "text-yellow-300" },
-  awe:         { icon: "😯", label: "Asombrado", color: "text-violet-400" },
-  calm:        { icon: "🌿", label: "Calma", color: "text-green-400" },
-  serene:      { icon: "🕊️", label: "Sereno", color: "text-blue-300" },
-  grateful:    { icon: "🥰", label: "Agradecido", color: "text-pink-400" },
-  hopeful:     { icon: "🌅", label: "Esperanzado", color: "text-amber-400" },
-  regret:      { icon: "😔", label: "Arrepentido", color: "text-gray-500" },
-  terror:      { icon: "👺", label: "Terror", color: "text-rose-800" },
-  furious:     { icon: "💣", label: "Colérico", color: "text-red-800" },
-  holy:        { icon: "⛪", label: "Sagrado", color: "text-indigo-500" },
-  solemn:      { icon: "🪔", label: "Solemne", color: "text-neutral-700" }
+  normal: { icon: "💭", label: "Pensativo", color: "text-gray-400" },
+  happy: { icon: "✨", label: "Feliz", color: "text-yellow-400" },
+  sad: { icon: "💧", label: "Triste", color: "text-blue-400" },
+  angry: { icon: "💢", label: "Enojado", color: "text-red-500" },
+  fear: { icon: "😰", label: "Temeroso", color: "text-purple-400" },
+  surprise: { icon: "❗", label: "Sorprendido", color: "text-orange-400" },
+  confused: { icon: "😕", label: "Confundido", color: "text-indigo-400" },
+  praying: { icon: "🙏", label: "Rezando", color: "text-amber-500" },
+  possessed: { icon: "👿", label: "Poseído", color: "text-rose-600" },
+  firm: { icon: "🪨", label: "Firme", color: "text-stone-600" },
+  nervous: { icon: "😬", label: "Nervioso", color: "text-yellow-500" },
+  curious: { icon: "🤔", label: "Curioso", color: "text-cyan-500" },
+  serious: { icon: "😐", label: "Serio", color: "text-neutral-500" },
+  disgusted: { icon: "🤢", label: "Asqueado", color: "text-lime-600" },
+  defiant: { icon: "😤", label: "Desafiante", color: "text-red-400" },
+  determined: { icon: "🔥", label: "Decidido", color: "text-orange-600" },
+  focused: { icon: "🎯", label: "Concentrado", color: "text-blue-600" },
+  disturbed: { icon: "🌀", label: "Perturbado", color: "text-purple-600" },
+  haunted: { icon: "👁️", label: "Acosado", color: "text-violet-700" },
+  terrified: { icon: "😱", label: "Aterrorizado", color: "text-rose-500" },
+  terrorized: { icon: "👻", label: "Aterrorizado", color: "text-indigo-700" },
+  intense: { icon: "⚡", label: "Intenso", color: "text-yellow-600" },
+  shocked: { icon: "😲", label: "Impactado", color: "text-orange-300" },
+  dark: { icon: "🌑", label: "Oscuro", color: "text-gray-700" },
+  grim: { icon: "☠️", label: "Sombrío", color: "text-slate-700" },
+  urgent: { icon: "🚨", label: "Urgente", color: "text-red-600" },
+  ominous: { icon: "🌩️", label: "Amenazante", color: "text-purple-800" },
+  tense: { icon: "🤐", label: "Tenso", color: "text-gray-600" },
+  anxious: { icon: "😟", label: "Ansioso", color: "text-yellow-600" },
+  uneasy: { icon: "😓", label: "Inquieto", color: "text-amber-600" },
+  suspicious: { icon: "🕵️", label: "Suspicaz", color: "text-zinc-600" },
+  proud: { icon: "😎", label: "Orgulloso", color: "text-emerald-500" },
+  worried: { icon: "😟", label: "Preocupado", color: "text-orange-500" },
+  disgust: { icon: "🤮", label: "Repugnancia", color: "text-lime-500" },
+  frustrated: { icon: "😤", label: "Frustrado", color: "text-rose-700" },
+  surprised: { icon: "😮", label: "Sorprendido", color: "text-yellow-400" },
+  desperate: { icon: "😩", label: "Desesperado", color: "text-rose-600" },
+  thoughtful: { icon: "🧠", label: "Reflexivo", color: "text-sky-600" },
+  resolute: { icon: "🛡️", label: "Resuelto", color: "text-teal-600" },
+  creepy: { icon: "🕷️", label: "Escalofriante", color: "text-gray-800" },
+  panic: { icon: "😵", label: "Pánico", color: "text-pink-600" },
+  mad: { icon: "😡", label: "Furioso", color: "text-red-700" },
+  taunt: { icon: "😈", label: "Provocador", color: "text-rose-700" },
+  excited: { icon: "😄", label: "Emocionado", color: "text-yellow-300" },
+  awe: { icon: "😯", label: "Asombrado", color: "text-violet-400" },
+  calm: { icon: "🌿", label: "Calma", color: "text-green-400" },
+  serene: { icon: "🕊️", label: "Sereno", color: "text-blue-300" },
+  grateful: { icon: "🥰", label: "Agradecido", color: "text-pink-400" },
+  hopeful: { icon: "🌅", label: "Esperanzado", color: "text-amber-400" },
+  regret: { icon: "😔", label: "Arrepentido", color: "text-gray-500" },
+  terror: { icon: "👺", label: "Terror", color: "text-rose-800" },
+  furious: { icon: "💣", label: "Colérico", color: "text-red-800" },
+  holy: { icon: "⛪", label: "Sagrado", color: "text-indigo-500" },
+  solemn: { icon: "🪔", label: "Solemne", color: "text-neutral-700" }
 }
 
 // Personajes del juego
@@ -222,7 +222,7 @@ export const scenes: Scene[] = [
   {
     id: "scene1_1",
     title: "Visiones en la Cripta",
-    background: "/backgrounds/crypt_basilica.jpg",
+    background: "https://res.cloudinary.com/dismyuce7/image/upload/f_auto,q_auto/v1750298100/assets-MortiSabbat/background/assets-MortiSabbat/background/basilica-front.png",
     music: "ambient_fog_church.mp3",
     dialogue: [
       {
@@ -268,7 +268,7 @@ export const scenes: Scene[] = [
   {
     id: "scene1_2",
     title: "Encuentro con el Loquito",
-    background: "/backgrounds/crypt_column.jpg",
+    background: "https://res.cloudinary.com/dismyuce7/image/upload/f_auto,q_auto/v1750298094/assets-MortiSabbat/background/assets-MortiSabbat/background/basilica-back3.png",
     music: "mystery_whispers.mp3",
     dialogue: [
       {
@@ -320,7 +320,7 @@ export const scenes: Scene[] = [
   {
     id: "scene1_3",
     title: "El Mapa del Abismo",
-    background: "/backgrounds/old_map_table.jpg",
+    background: "https://res.cloudinary.com/dismyuce7/image/upload/f_auto,q_auto/v1750298108/assets-MortiSabbat/background/assets-MortiSabbat/background/basilica-sideLeft.png",
     music: "tense_droning.mp3",
     dialogue: [
       {
@@ -354,7 +354,7 @@ export const scenes: Scene[] = [
   {
     id: "scene1_4",
     title: "Descenso",
-    background: "/backgrounds/secret_passage.jpg",
+    background: "https://res.cloudinary.com/dismyuce7/image/upload/f_auto,q_auto/v1750298115/assets-MortiSabbat/background/assets-MortiSabbat/background/tunel.png",
     music: "ominous_tunnel.mp3",
     dialogue: [
       {
@@ -383,7 +383,7 @@ export const scenes: Scene[] = [
   {
     id: "scene2_1",
     title: "El Mural del Abuelo",
-    background: "/backgrounds/nick_house_lab.jpg",
+    background: "https://res.cloudinary.com/dismyuce7/image/upload/f_auto,q_auto/v1750298083/assets-MortiSabbat/background/assets-MortiSabbat/background/3.png",
     music: "ambient_radio_static.mp3",
     dialogue: [
       {
@@ -417,7 +417,7 @@ export const scenes: Scene[] = [
   {
     id: "scene2_2",
     title: "Fragmentos del Pasado",
-    background: "/backgrounds/old_photos_table.jpg",
+    background: "https://res.cloudinary.com/dismyuce7/image/upload/f_auto,q_auto/v1750298115/assets-MortiSabbat/background/assets-MortiSabbat/background/tunel.png",
     music: "suspense_dark_echo.mp3",
     dialogue: [
       {
@@ -451,7 +451,7 @@ export const scenes: Scene[] = [
   {
     id: "scene2_3",
     title: "Acecho en la Ventana",
-    background: "/backgrounds/nick_window_shadow.jpg",
+    background: "https://res.cloudinary.com/dismyuce7/image/upload/f_auto,q_auto/v1750298083/assets-MortiSabbat/background/assets-MortiSabbat/background/3.png",
     music: "heartbeat_echoes.mp3",
     dialogue: [
       {
@@ -498,7 +498,7 @@ export const scenes: Scene[] = [
   {
     id: "scene3_1",
     title: "El Aroma del Horror",
-    background: "/backgrounds/bakery_interior_day.jpg",
+    background: "https://res.cloudinary.com/dismyuce7/image/upload/f_auto,q_auto/v1750298114/assets-MortiSabbat/background/assets-MortiSabbat/background/panaderia%20entrada",
     music: "ambient_bakery_ominous.mp3",
     dialogue: [
       {
@@ -538,7 +538,7 @@ export const scenes: Scene[] = [
   {
     id: "scene3_2",
     title: "La Levadura de los Muertos",
-    background: "/backgrounds/bakery_counter_infestation.jpg",
+    background: "https://res.cloudinary.com/dismyuce7/image/upload/f_auto,q_auto/v1750298114/assets-MortiSabbat/background/assets-MortiSabbat/background/panaderiaDentro.png",
     music: "ambient_fly_buzz.mp3",
     dialogue: [
       {
@@ -578,7 +578,7 @@ export const scenes: Scene[] = [
   {
     id: "scene3_3",
     title: "Harina Maldita",
-    background: "/backgrounds/bakery_storage_dark.jpg",
+    background: "https://res.cloudinary.com/dismyuce7/image/upload/f_auto,q_auto/v1750298115/assets-MortiSabbat/background/assets-MortiSabbat/background/tunel.png",
     music: "suspense_cicadas_low.mp3",
     dialogue: [
       {
@@ -625,7 +625,7 @@ export const scenes: Scene[] = [
   {
     id: "scene4_1",
     title: "El Metiche con Micrófono",
-    background: "/backgrounds/bakery_morning.jpg",
+    background: "https://res.cloudinary.com/dismyuce7/image/upload/f_auto,q_auto/v1750298112/assets-MortiSabbat/background/assets-MortiSabbat/background/panaderia%20entrada.png",
     music: "ambient_city_morning_dark.mp3",
     dialogue: [
       {
@@ -665,7 +665,7 @@ export const scenes: Scene[] = [
   {
     id: "scene4_2",
     title: "Primicia Maldita",
-    background: "/backgrounds/bakery_table_close.jpg",
+    background: "https://res.cloudinary.com/dismyuce7/image/upload/f_auto,q_auto/v1750298112/assets-MortiSabbat/background/assets-MortiSabbat/background/panaderia%20entrada.png",
     music: "suspense_muffled_news.mp3",
     dialogue: [
       {
@@ -705,7 +705,7 @@ export const scenes: Scene[] = [
   {
     id: "scene4_3",
     title: "Susurros Grabados",
-    background: "/backgrounds/bakery_corner_shadow.jpg",
+    background: "https://res.cloudinary.com/dismyuce7/image/upload/f_auto,q_auto/v1750298114/assets-MortiSabbat/background/assets-MortiSabbat/background/panaderiaDentro.png",
     music: "whisper_loop_dark.mp3",
     dialogue: [
       {
@@ -746,7 +746,7 @@ export const scenes: Scene[] = [
   {
     id: "scene5_1",
     title: "Regreso a la Sombra",
-    background: "/backgrounds/prison_hall_dark.jpg",
+    background: "https://res.cloudinary.com/dismyuce7/image/upload/f_auto,q_auto/v1750298110/assets-MortiSabbat/background/assets-MortiSabbat/background/carcel.png",
     music: "dark_prison_reverb.mp3",
     dialogue: [
       {
@@ -780,7 +780,7 @@ export const scenes: Scene[] = [
   {
     id: "scene5_2",
     title: "Símbolos Rotos",
-    background: "/backgrounds/prison_wall_symbols.jpg",
+    background: "https://res.cloudinary.com/dismyuce7/image/upload/f_auto,q_auto/v1750298110/assets-MortiSabbat/background/assets-MortiSabbat/background/carcel.png",
     music: "ritual_drone.mp3",
     dialogue: [
       {
@@ -814,7 +814,7 @@ export const scenes: Scene[] = [
   {
     id: "scene5_3",
     title: "El Susurro del Toro",
-    background: "/backgrounds/tunnel_gate.jpg",
+    background: "https://res.cloudinary.com/dismyuce7/image/upload/f_auto,q_auto/v1750298115/assets-MortiSabbat/background/assets-MortiSabbat/background/tunel.png",
     music: "deep_cavern_whispers.mp3",
     dialogue: [
       {
@@ -849,7 +849,7 @@ export const scenes: Scene[] = [
   {
     id: "scene6_1",
     title: "La Planta Maldita",
-    background: "/backgrounds/panaderia_subterranea.jpg",
+    background: "https://res.cloudinary.com/dismyuce7/image/upload/f_auto,q_auto/v1750298115/assets-MortiSabbat/background/assets-MortiSabbat/background/tunel.png",
     music: "ritual_heartbeat_low.mp3",
     dialogue: [
       {
@@ -883,7 +883,7 @@ export const scenes: Scene[] = [
   {
     id: "scene6_2",
     title: "Cosecha Inhumana",
-    background: "/backgrounds/altar_culto.jpg",
+    background: "https://res.cloudinary.com/dismyuce7/image/upload/f_auto,q_auto/v1750298114/assets-MortiSabbat/background/assets-MortiSabbat/background/panaderiaDentro.png",
     music: "demonic_reveal.mp3",
     dialogue: [
       {
@@ -923,7 +923,7 @@ export const scenes: Scene[] = [
   {
     id: "scene6_3",
     title: "Fuego y Ceniza",
-    background: "/backgrounds/combate_granjero.jpg",
+    background: "https://res.cloudinary.com/dismyuce7/image/upload/f_auto,q_auto/v1750298114/assets-MortiSabbat/background/assets-MortiSabbat/background/panaderiaDentro.png",
     music: "battle_ritual_hellfire.mp3",
     dialogue: [
       {
@@ -970,7 +970,7 @@ export const scenes: Scene[] = [
   {
     id: "scene7_1",
     title: "El Horno del Fin",
-    background: "/backgrounds/panecillo_horno.jpg",
+    background: "https://res.cloudinary.com/dismyuce7/image/upload/f_auto,q_auto/v1750303724/assets-MortiSabbat/background/assets-MortiSabbat/background/imagenInicioCap7.png",
     music: "final_battle_theme.mp3",
     dialogue: [
       {
@@ -1028,7 +1028,7 @@ export const scenes: Scene[] = [
   {
     id: "scene7_2",
     title: "Verdades Finales",
-    background: "/backgrounds/horno_rojo.jpg",
+    background: "https://res.cloudinary.com/dismyuce7/image/upload/f_auto,q_auto/v1750303724/assets-MortiSabbat/background/assets-MortiSabbat/background/imagenInicioCap7.png",
     music: "ritual_climax.mp3",
     dialogue: [
       {
@@ -1085,7 +1085,7 @@ export const scenes: Scene[] = [
   {
     id: "scene7_3",
     title: "La Decisión",
-    background: "/backgrounds/horno_ritual_rojo.jpg",
+    background: "https://res.cloudinary.com/dismyuce7/image/upload/f_auto,q_auto/v1750303724/assets-MortiSabbat/background/assets-MortiSabbat/background/imagenInicioCap7.png",
     music: "decision_theme.mp3",
     dialogue: [
       {
@@ -1123,7 +1123,7 @@ export const scenes: Scene[] = [
   {
     id: "scene7_3_choice1",
     title: "Sacrificio de la Fe",
-    background: "/backgrounds/sacrificio_lilith.jpg",
+    background: "https://res.cloudinary.com/dismyuce7/image/upload/f_auto,q_auto/v1750303721/assets-MortiSabbat/background/assets-MortiSabbat/background/imagenCap7FinalesBuenos.png",
     music: "sacrificio_theme.mp3",
     dialogue: [
       {
@@ -1175,7 +1175,7 @@ export const scenes: Scene[] = [
   {
     id: "scene7_3_choice2",
     title: "Redención del Toro",
-    background: "/backgrounds/redencion_balberith.jpg",
+    background: "https://res.cloudinary.com/dismyuce7/image/upload/f_auto,q_auto/v1750303721/assets-MortiSabbat/background/assets-MortiSabbat/background/imagenCap7FinalesBuenos.png",
     music: "redencion_theme.mp3",
     dialogue: [
       {
@@ -1227,7 +1227,7 @@ export const scenes: Scene[] = [
   {
     id: "scene7_3_choice3",
     title: "El Error del Conspiranoico",
-    background: "/backgrounds/error_nick.jpg",
+    background: "https://res.cloudinary.com/dismyuce7/image/upload/f_auto,q_auto/v1750303719/assets-MortiSabbat/background/assets-MortiSabbat/background/imagenCap7FinalMalo.png",
     music: "dark_twist_theme.mp3",
     dialogue: [
       {
@@ -1279,7 +1279,7 @@ export const scenes: Scene[] = [
   {
     id: "scene7_3_choice4",
     title: "El Despertar del Granjero",
-    background: "/backgrounds/despertar_granjero.jpg",
+    background: "https://res.cloudinary.com/dismyuce7/image/upload/f_auto,q_auto/v1750303719/assets-MortiSabbat/background/assets-MortiSabbat/background/imagenCap7FinalMalo.png",
     music: "dark_final_theme.mp3",
     dialogue: [
       {
