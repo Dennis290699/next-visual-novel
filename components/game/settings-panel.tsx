@@ -418,7 +418,7 @@ export function SettingsPanel({ settings, setSettings, onBack }: SettingsPanelPr
 
       {/* Imagen de fondo */}
       <motion.img
-        src="https://res.cloudinary.com/dismyuce7/image/upload/f_auto,q_auto/v1750466224/assets-MortiSabbat/wallpaper/assets-MortiSabbat/wallpaper/Backgroung-Game.jpg"
+        src="https://res.cloudinary.com/dismyuce7/image/upload/f_auto,q_auto/v1750298114/assets-MortiSabbat/background/assets-MortiSabbat/background/panaderiaDentro.png"
         className="absolute inset-0 object-cover w-full h-full opacity-20"
       />
       

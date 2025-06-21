@@ -20,6 +20,11 @@ export function GameMenu({ onNavigate, onConfirmation }: GameMenuProps) {
       transition={{ duration: 0.6 }}
       className="flex flex-col items-center justify-center min-h-screen relative z-10"
     >
+      {/* Imagen de fondo */}
+      <motion.img
+        src="https://res.cloudinary.com/dismyuce7/image/upload/f_auto,q_auto/v1750298110/assets-MortiSabbat/background/assets-MortiSabbat/background/carcel.png"
+        className="absolute inset-0 object-cover w-full h-full opacity-20"
+      />
       <div className="w-full max-w-md space-y-6">
         <motion.h2
           initial={{ opacity: 0, y: -20 }}

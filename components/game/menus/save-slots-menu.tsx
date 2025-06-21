@@ -22,6 +22,11 @@ export function SaveSlotsMenu({ saveSlots, onNavigate, onConfirmation }: SaveSlo
       className="fixed inset-0 z-50 bg-black/90 backdrop-blur-lg flex items-center justify-center p-4"
       onClick={() => onNavigate("narrative")}
     >
+      {/* Imagen de fondo */}
+      <motion.img
+        src="https://res.cloudinary.com/dismyuce7/image/upload/f_auto,q_auto/v1750298110/assets-MortiSabbat/background/assets-MortiSabbat/background/carcel.png"
+        className="absolute inset-0 object-cover w-full h-full opacity-20"
+      />
       <motion.div
         initial={{ y: 50 }}
         animate={{ y: 0 }}

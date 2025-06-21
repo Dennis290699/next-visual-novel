@@ -60,4 +60,5 @@ export interface NarrativeState {
   characterImage: string
   showChoices: boolean
   choices: any[]
+  settings: GameSettings
 }

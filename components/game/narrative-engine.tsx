@@ -6,6 +6,7 @@ import { Save, Pause, Eye, Heart, ChevronRight } from "lucide-react"
 import { ImpactButton } from "./impact-button"
 import { getCharacterById, getSceneById, getNextDialogue, hasChoices, emotionIcons } from "@/data/gameDemo"
 import type { NarrativeState, MenuState } from "./types"
+import { Howl } from 'howler'
 
 interface NarrativeEngineProps {
   narrativeState: NarrativeState
@@ -19,6 +20,62 @@ export function NarrativeEngine({ narrativeState, setNarrativeState, setCurrentM
   const [showUI, setShowUI] = useState(true)
   const [canAdvance, setCanAdvance] = useState(false)
   const typingRef = useRef<NodeJS.Timeout>()
+  const currentMusic = useRef<Howl | null>(null)
+
+  // Función para obtener la ruta de la música
+  const getMusicSource = (musicPath: string) => {
+    return musicPath.startsWith("http")
+      ? musicPath
+      : `/music/${musicPath}` // ruta local
+  }
+
+  useEffect(() => {
+    if (currentScene?.music) {
+      // Si hay música actual jugando, detenerla
+      if (currentMusic.current) {
+        currentMusic.current.stop()
+      }
+      
+      // Crear nueva instancia de Howl para la música de la escena
+      currentMusic.current = new Howl({
+        src: [getMusicSource(currentScene.music)],
+        volume: 0.05,
+        loop: true,
+        onload: () => {
+          currentMusic.current?.play()
+        }
+      })
+    }
+  }, [narrativeState.currentScene])
+
+  useEffect(() => {
+    const scene = getSceneById(narrativeState.currentScene)
+    if (scene && scene.music) {
+      // Si hay música actual jugando, detenerla
+      if (currentMusic.current) {
+        currentMusic.current.stop()
+      }
+      
+      // Crear nueva instancia de Howl para la música de la escena
+      currentMusic.current = new Howl({
+        src: [getMusicSource(scene.music)],
+        volume: 0.05,
+        loop: true,
+        onload: () => {
+          currentMusic.current?.play()
+        }
+      })
+    }
+  }, [narrativeState.currentScene])
+
+  useEffect(() => {
+    return () => {
+      // Limpieza: detener la música cuando el componente se desmonte
+      if (currentMusic.current) {
+        currentMusic.current.stop()
+      }
+    }
+  }, [])
 
   const currentScene = getSceneById(narrativeState.currentScene)
   const currentDialogue = currentScene?.dialogue[narrativeState.currentDialogueIndex]
@@ -80,6 +137,13 @@ export function NarrativeEngine({ narrativeState, setNarrativeState, setCurrentM
 
   const advanceDialogue = () => {
     if (!canAdvance || !currentScene) return
+
+    // Si estamos cambiando de escena, detener la música actual
+    if (narrativeState.currentDialogueIndex === currentScene.dialogue.length - 1 && currentScene.nextScene) {
+      if (currentMusic.current) {
+        currentMusic.current.stop()
+      }
+    }
 
     // Si está escribiendo, completar el texto inmediatamente
     if (isTyping) {

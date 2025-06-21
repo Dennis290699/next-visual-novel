@@ -26,6 +26,11 @@ export function GalleryMenu({ onNavigate, onImageSelect }: GalleryMenuProps) {
       transition={{ duration: 0.6 }}
       className="min-h-screen relative z-10 p-6"
     >
+      {/* Imagen de fondo */}
+      <motion.img
+        src="https://res.cloudinary.com/dismyuce7/image/upload/f_auto,q_auto/v1750298115/assets-MortiSabbat/background/assets-MortiSabbat/background/tunel.png"
+        className="absolute inset-0 object-cover w-full h-full opacity-20"
+      />
       <div className="max-w-6xl mx-auto">
         <motion.h2
           initial={{ opacity: 0, y: -20 }}

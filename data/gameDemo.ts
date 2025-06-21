@@ -230,7 +230,7 @@ export const scenes: Scene[] = [
     id: "scene1_1",
     title: "Visiones en la Cripta",
     background: "https://res.cloudinary.com/dismyuce7/image/upload/f_auto,q_auto/v1750298100/assets-MortiSabbat/background/assets-MortiSabbat/background/basilica-front.png",
-    music: "ambient_fog_church.mp3",
+    music: "https://res.cloudinary.com/dismyuce7/video/upload/v1750526997/assets-MortiSabbat/audio/assets-MortiSabbat/audio/scene1_1.mp3",
     dialogue: [
       {
         id: "d1_1_1",

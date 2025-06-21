@@ -85,6 +85,7 @@ export function GameInterface() {
     characterImage: "/placeholder.svg?height=600&width=400",
     showChoices: false,
     choices: [],
+    settings: settings,
   })
 
   const [saveSlots, setSaveSlots] = useState<SaveSlot[]>(initialSaveSlots)
@@ -115,6 +116,7 @@ export function GameInterface() {
               characterImage: "/placeholder.svg?height=600&width=400",
               showChoices: false,
               choices: [],
+              settings: settings,
             })
           }, 3000)
           break
@@ -249,6 +251,7 @@ export function GameInterface() {
                   characterImage: "/placeholder.svg?height=600&width=400",
                   showChoices: false,
                   choices: [],
+                  settings: settings,
                 })
               }}
               onMainMenu={() => setCurrentMenu("main")}
