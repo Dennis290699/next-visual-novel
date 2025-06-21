@@ -17,6 +17,12 @@ export function PauseMenu({ onNavigate }: PauseMenuProps) {
       className="fixed inset-0 z-50 bg-black/80 backdrop-blur-md flex items-center justify-center"
       onClick={() => onNavigate("narrative")}
     >
+      {/* Imagen de fondo */}
+      <motion.img
+        src="https://res.cloudinary.com/dismyuce7/image/upload/f_auto,q_auto/v1750466224/assets-MortiSabbat/wallpaper/assets-MortiSabbat/wallpaper/Backgroung-Game.jpg"
+        className="absolute inset-0 object-cover w-full h-full opacity-20"
+      />
+      
       <motion.div
         initial={{ scale: 0.8, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}

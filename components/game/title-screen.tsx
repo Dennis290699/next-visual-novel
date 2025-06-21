@@ -84,6 +84,12 @@ export function TitleScreen({ onContinue }: TitleScreenProps) {
         ))}
       </div>
 
+      {/* Imagen de fondo */}
+      <motion.img
+        src="https://res.cloudinary.com/dismyuce7/image/upload/f_auto,q_auto/v1750466224/assets-MortiSabbat/wallpaper/assets-MortiSabbat/wallpaper/Backgroung-Game.jpg"
+        className="absolute inset-0 object-cover w-full h-full opacity-20"
+      />
+
       {/* Contenido principal */}
       <div className="relative z-10 min-h-screen flex flex-col items-center justify-center p-6">
         {/* Logo principal con MS */}
@@ -198,7 +204,7 @@ export function TitleScreen({ onContinue }: TitleScreenProps) {
           className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-center"
         >
           <p className="text-gray-500 text-sm font-elegant italic">
-            "En las sombras de Ravenshollow, los secretos aguardan..."
+            "En las sombras de Morti Sabbat, los secretos aguardan..."
           </p>
         </motion.div>
       </div>

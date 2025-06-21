@@ -415,6 +415,13 @@ export function SettingsPanel({ settings, setSettings, onBack }: SettingsPanelPr
       transition={{ duration: 0.6 }}
       className="min-h-screen relative z-10 p-6"
     >
+
+      {/* Imagen de fondo */}
+      <motion.img
+        src="https://res.cloudinary.com/dismyuce7/image/upload/f_auto,q_auto/v1750466224/assets-MortiSabbat/wallpaper/assets-MortiSabbat/wallpaper/Backgroung-Game.jpg"
+        className="absolute inset-0 object-cover w-full h-full opacity-20"
+      />
+      
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} className="text-center mb-8">

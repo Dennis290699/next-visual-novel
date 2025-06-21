@@ -31,6 +31,12 @@ export function MainMenu({ onNavigate, onReturnToLanding }: MainMenuProps) {
       transition={{ duration: 0.8 }}
       className="flex flex-col items-center justify-center min-h-screen relative z-10"
     >
+      {/* Imagen de fondo */}
+      <motion.img
+        src="https://res.cloudinary.com/dismyuce7/image/upload/f_auto,q_auto/v1750466224/assets-MortiSabbat/wallpaper/assets-MortiSabbat/wallpaper/Backgroung-Game.jpg"
+        className="absolute inset-0 object-cover w-full h-full opacity-20"
+      />
+
       {/* Botón de regreso a landing */}
       <motion.div
         initial={{ opacity: 0, scale: 0 }}
